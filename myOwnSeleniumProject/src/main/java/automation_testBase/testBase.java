@@ -1,5 +1,7 @@
 package automation_testBase;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -14,7 +16,9 @@ public class testBase {
 	String url="http://automationpractice.com";
 	String browser="chrome";
 	String log4jConfigPath="log4j.properties";
-	
+	public Date dtnow=new Date();
+	public SimpleDateFormat ft =new SimpleDateFormat ("MMddmmss");
+
 	
 	public void init() {
 		selectBrowser(browser);

@@ -21,9 +21,15 @@ public class TC002_verifyRegisteration extends testBase{
 	
 	@Test
 	public void createaccount() {
-		homepage=new HomePage(driver);
-		homepage.signup("test0610@gmail.com", "Manoj", "Kumar", "password", "101 main st", "Manchester", "CT", "06042", "8124567890", "HomeAddress");
-		Assert.assertEquals(homepage.getRegisterationMessage(), "Welcome to your account. Here you can manage all of your personal information and orders.");
+		try {
+			
+			homepage=new HomePage(driver);
+			homepage.signup("test" + ft.format(dtnow) + "@gmail.com", "Manoj", "Kumar", "password", "101 main st", "Manchester", "CT", "06042", "8124567890", "HomeAddress");
+			Assert.assertEquals(homepage.getRegisterationMessage(), "Welcome to your account. Here you can manage all of your personal information and orders.");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	@AfterTest

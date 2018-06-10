@@ -83,6 +83,7 @@ public class HomePage {
 		lastName.sendKeys(lastname);
 		log.info("Entered last name: " + lastname);
 		loginPassword.sendKeys(password);
+		log.info("Captured email address: " + loginEmailAddress.getTagName());
 		address1.sendKeys(address);
 		log.info("Entered address: " + address);
 		city.sendKeys(citi);
