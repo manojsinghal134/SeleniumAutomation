@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13875" started-at="2018-06-10T14:38:23Z" finished-at="2018-06-10T14:38:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13875" started-at="2018-06-10T14:38:23Z" finished-at="2018-06-10T14:38:37Z">
+      <class name="automation_homePage.TC002_verifyRegisteration">
+        <test-method status="PASS" signature="setup()[pri:0, instance:automation_homePage.TC002_verifyRegisteration@6fd02e5]" name="setup" is-config="true" duration-ms="8035" started-at="2018-06-10T14:38:23Z" finished-at="2018-06-10T14:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createaccount()[pri:0, instance:automation_homePage.TC002_verifyRegisteration@6fd02e5]" name="createaccount" duration-ms="5800" started-at="2018-06-10T14:38:31Z" finished-at="2018-06-10T14:38:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createaccount -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:automation_homePage.TC002_verifyRegisteration@6fd02e5]" name="endTest" is-config="true" duration-ms="0" started-at="2018-06-10T14:38:37Z" finished-at="2018-06-10T14:38:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- automation_homePage.TC002_verifyRegisteration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

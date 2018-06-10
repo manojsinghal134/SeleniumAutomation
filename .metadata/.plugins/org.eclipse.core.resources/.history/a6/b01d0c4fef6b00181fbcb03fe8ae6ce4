@@ -1,0 +1,20 @@
+package automation_homePage;
+
+public class TC001_verifyLoginWithInvalidCredentials {
+	
+		@BeforeTest
+		public void setup() {
+			
+		}
+		
+		@Test
+		public void verifyLoginWithInvalidCredentials() {
+			
+		}
+		
+		@AfterTest
+		public void endTest() {
+			
+		}
+	
+}

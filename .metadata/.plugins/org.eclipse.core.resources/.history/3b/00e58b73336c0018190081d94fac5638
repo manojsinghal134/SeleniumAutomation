@@ -1,0 +1,24 @@
+package automation_testBase;
+
+import org.openqa.selenium.WebDriver;
+
+public class testBase {
+
+	public WebDriver webdriver;
+	String url="";
+	String browser="chrome";
+	
+	public void init() {
+		selectBrowser(browser);
+		geturl(url);
+	}
+	
+	public selectBrowser(browser) {
+		
+	}
+	
+	public geturl(url) {
+		
+	}
+	
+}

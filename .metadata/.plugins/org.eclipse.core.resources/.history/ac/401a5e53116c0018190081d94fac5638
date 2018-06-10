@@ -1,0 +1,37 @@
+package automation_homePage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class TC001_verifyLoginWithInvalidCredentials {
+		WebDriver driver;
+		@BeforeTest
+		public void setup() {
+			//System.setProperty("webdriver.edge.driver",System.getProperty("user.dir") + "\\Drivers\\MicrosoftWebDriver.exe" );
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Drivers\\ChromeDriver.exe" );
+			//driver=new EdgeDriver();
+			driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.get("http://automationpractice.com");
+			//driver.navigate().to("http://automationpractice.com");
+		}
+		
+		@Test
+		public void verifyLoginWithInvalidCredentials() {
+			driver.findElement(By.xpath("//a[@class='login']")).click();
+			driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@gmail.com");
+			driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("password");
+			driver.findElement(By.xpath("//button[@id='SubmitLogin']")).click();
+		}
+		
+		@AfterTest
+		public void endTest() {
+			
+		}
+	
+}

@@ -1,0 +1,31 @@
+2018-06-09 23:18:39 INFO  TC001_verifyLoginWithInvalidCredentials:23 - **************Starting verifyLoginWithInvalidCredentials Test****************
+2018-06-09 23:18:40 INFO  HomePage:42 - clicked on sign in and object is [[ChromeDriver: chrome on XP (55fca80daefbccaba9078634a97db833)] -> xpath: //a[@class='login']]
+2018-06-09 23:18:40 INFO  HomePage:44 - Entered Email Address:  test@gmail.com
+2018-06-09 23:18:40 INFO  HomePage:46 - Entered password: password123
+2018-06-09 23:18:41 INFO  HomePage:48 - clicked on submit button and object is [[ChromeDriver: chrome on XP (55fca80daefbccaba9078634a97db833)] -> xpath: //button[@id='SubmitLogin']]
+2018-06-09 23:18:41 INFO  HomePage:52 - Error message is: Authentication failed.
+2018-06-09 23:18:41 INFO  TC001_verifyLoginWithInvalidCredentials:28 - **************Finishing verifyLoginWithInvalidCredentials Test****************
+2018-06-10 10:21:14 INFO  HomePage:85 - Clicked on sign in link
+2018-06-10 10:21:15 INFO  HomePage:89 - Entered First name: Manoj
+2018-06-10 10:21:15 INFO  HomePage:91 - Entered last name: Kumar
+2018-06-10 10:21:16 INFO  HomePage:96 - Entered address: 101 main st
+2018-06-10 10:21:17 INFO  HomePage:102 - Entered alias for address: HomeAddress
+2018-06-10 10:25:00 INFO  HomePage:76 - Clicked on sign in link
+2018-06-10 10:25:02 INFO  HomePage:80 - Entered First name: Manoj
+2018-06-10 10:25:02 INFO  HomePage:82 - Entered last name: Kumar
+2018-06-10 10:25:03 INFO  HomePage:85 - Entered address: 101 main st
+2018-06-10 10:25:04 INFO  HomePage:91 - Entered alias for address: HomeAddress
+2018-06-10 10:26:49 INFO  HomePage:76 - Clicked on sign in link
+2018-06-10 10:26:51 INFO  HomePage:80 - Entered First name: Manoj
+2018-06-10 10:26:51 INFO  HomePage:82 - Entered last name: Kumar
+2018-06-10 10:26:51 INFO  HomePage:85 - Entered address: 101 main st
+2018-06-10 10:26:52 INFO  HomePage:92 - Entered alias for address: HomeAddress
+2018-06-10 10:26:53 INFO  HomePage:94 - Clicked on submit button
+2018-06-10 10:37:57 INFO  HomePage:78 - Clicked on sign in link
+2018-06-10 10:38:32 INFO  HomePage:78 - Clicked on sign in link
+2018-06-10 10:38:34 INFO  HomePage:82 - Entered First name: Manoj
+2018-06-10 10:38:34 INFO  HomePage:84 - Entered last name: Kumar
+2018-06-10 10:38:35 INFO  HomePage:87 - Entered address: 101 main st
+2018-06-10 10:38:35 INFO  HomePage:94 - Entered alias for address: HomeAddress
+2018-06-10 10:38:37 INFO  HomePage:96 - Clicked on submit button
+2018-06-10 10:38:37 INFO  HomePage:100 - Welome message: Welcome to your account. Here you can manage all of your personal information and orders.

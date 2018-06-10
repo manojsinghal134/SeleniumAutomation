@@ -1,0 +1,7 @@
+package automation_homePage;
+
+import automation_testBase.testBase;
+
+public class TC002_verifyRegisteration extends testBase{
+
+}

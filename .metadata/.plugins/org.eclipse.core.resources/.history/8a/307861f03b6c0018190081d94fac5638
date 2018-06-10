@@ -1,0 +1,13 @@
+# Define the root logger with appender file
+log4j.rootlogger=INFO,File,stdout
+
+# Define the file appender
+log4j.appender.File=org.apache.log4j.FileAppender
+log4j.appender.File.File=automation.out
+log4j.appender.File.Append=true
+log4j.appender.File.Layout=org.apache.log4j.PatternLayout
+log4j.appender.File.Layout.ConversionPattern=%d{yyyy-mm-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+# Define the layout of file appender
+
+
+# Direct log messages to stdout

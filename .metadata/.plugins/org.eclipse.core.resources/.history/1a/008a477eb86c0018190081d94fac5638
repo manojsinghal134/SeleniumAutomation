@@ -1,0 +1,25 @@
+package automation_homePage;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import automation_testBase.testBase;
+
+public class TC002_verifyRegisteration extends testBase{
+	
+	@BeforeTest
+	public void setup() {
+		
+	}
+	
+	@Test
+	public void createaccount() {
+		
+	}
+	
+	@AfterTest
+	public void endTest() {
+		
+	}
+}

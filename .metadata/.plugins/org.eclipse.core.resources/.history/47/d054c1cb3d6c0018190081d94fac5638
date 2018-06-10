@@ -1,0 +1,46 @@
+package automation_uiActions;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+
+	WebDriver driver;
+	
+	@FindBy(xpath="//a[@class='login']")
+	WebElement signIn;
+	
+	@FindBy(xpath="//input[@id='email']")
+	WebElement loginEmailAddress;
+	
+	
+	@FindBy(xpath="//input[@id='passwd']")
+	WebElement loginPassword;
+	
+	@FindBy(xpath="//button[@id='SubmitLogin']")
+	WebElement submitButton;
+	
+	@FindBy(xpath="//*[@id='center_column']//li[1]")
+	WebElement authenticationFailed;
+	
+	public HomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void loginToApplication(String emailAddress, String password) {
+		signIn.click();
+		loginEmailAddress.sendKeys(emailAddress);
+		loginPassword.sendKeys(password);
+		submitButton.click();
+	}
+	
+	public String getInvalidLoginText() {
+		return authenticationFailed.getText();
+	}
+	
+}

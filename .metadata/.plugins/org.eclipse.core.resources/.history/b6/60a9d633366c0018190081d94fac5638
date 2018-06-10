@@ -1,0 +1,33 @@
+package automation_testBase;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class testBase {
+
+	public WebDriver driver;
+	String url="";
+	String browser="chrome";
+	
+	public void init() {
+		selectBrowser(browser);
+		geturl(url);
+	}
+	
+	public void selectBrowser(String browser) {
+		if(browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("WebDriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\ChromeDriver.exe" );
+			driver=new ChromeDriver();
+			
+		}
+	}
+	
+	public void geturl(String url) {
+		driver.get(url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait("60",TimeUnit.SECONDS);
+	}
+	
+}
